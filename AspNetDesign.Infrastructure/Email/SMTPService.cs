@@ -5,7 +5,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Infrastructure.Email
+namespace AspNetDesign.Infrastructure.Email
 {
     public class SMTPService : IEmailService
     {

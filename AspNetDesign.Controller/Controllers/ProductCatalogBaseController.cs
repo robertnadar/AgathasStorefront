@@ -1,6 +1,6 @@
-﻿using Agathas.Storefront.Services.Interfaces;
-using Agathas.Storefront.Services.Messaging.ProductCatalogService;
-using Agathas.Storefront.Services.ViewModels;
+﻿using AspNetDesign.Services.Interfaces;
+using AspNetDesign.Services.Messaging.ProductCatalogService;
+using AspNetDesign.Services.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace Agathas.StorefrontController.Controllers
+namespace AspNetDesignController.Controllers
 {
     public class ProductCatalogBaseController : Controller
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{27E7888C-FA36-4AD8-BBF8-8F0A4093182C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Agathas.Storefront.Infrastructure</RootNamespace>
-    <AssemblyName>Agathas.Storefront.Infrastructure</AssemblyName>
+    <RootNamespace>AspNetDesign.Infrastructure</RootNamespace>
+    <AssemblyName>AspNetDesign.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

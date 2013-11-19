@@ -1,11 +1,11 @@
-﻿using Agathas.Storefront.Infrastructure.Domain;
+﻿using AspNetDesign.Infrastructure.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Model.Products
+namespace AspNetDesign.Model.Products
 {
     public class ProductColor : EntityBase<int>, IProductAttribute
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Routing;
-namespace Agathas.StorefrontController
+namespace AspNetDesignController
 {
     public class IoCControllerFactory : DefaultControllerFactory
     {

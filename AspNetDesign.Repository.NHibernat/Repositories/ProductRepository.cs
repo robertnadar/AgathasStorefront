@@ -1,8 +1,8 @@
-﻿using Agathas.Storefront.Infrastructure.Domain;
-using Agathas.Storefront.Model.Products;
+﻿using AspNetDesign.Infrastructure.Domain;
+using AspNetDesign.Model.Products;
 using NHibernate;
 
-namespace Agathas.Storefront.Repository.NHibernat.Repositories
+namespace AspNetDesign.Repository.NHibernat.Repositories
 {
     public class ProductRepository : Repository<Product, int>, IAggregateRoot
     {

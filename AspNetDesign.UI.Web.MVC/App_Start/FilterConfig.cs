@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Agathas.Storefront.UI.Web.MVC
+namespace AspNetDesign.UI.Web.MVC
 {
     public class FilterConfig
     {

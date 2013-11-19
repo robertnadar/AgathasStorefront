@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Infrastructure.Quering
+namespace AspNetDesign.Infrastructure.Quering
 {
     public enum QueryOperator
     {

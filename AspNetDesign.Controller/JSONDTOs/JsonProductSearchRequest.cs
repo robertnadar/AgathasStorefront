@@ -1,4 +1,4 @@
-﻿using Agathas.Storefront.Services.Messaging.ProductCatalogService;
+﻿using AspNetDesign.Services.Messaging.ProductCatalogService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace Agathas.StorefrontController.JSONDTOs
+namespace AspNetDesignController.JSONDTOs
 {
     [DataContract]
     [ModelBinder(typeof(JsonModelBinder))]

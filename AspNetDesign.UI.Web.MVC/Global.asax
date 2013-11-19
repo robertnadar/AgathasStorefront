@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Agathas.Storefront.UI.Web.MVC.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="AspNetDesign.UI.Web.MVC.MvcApplication" Language="C#" %>

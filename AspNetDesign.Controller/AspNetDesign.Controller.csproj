@@ -7,8 +7,8 @@
     <ProjectGuid>{A8840A91-F765-4FAD-B2FE-188239CAE2F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Agathas.StorefrontController</RootNamespace>
-    <AssemblyName>Agathas.StorefrontController</AssemblyName>
+    <RootNamespace>AspNetDesign.Controller</RootNamespace>
+    <AssemblyName>AspNetDesign.Controller</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -65,17 +65,17 @@
     <Compile Include="ViewModels\ProductCatalog\ProductSearchResultView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Agathas.Storefront.Infrastructure\Agathas.Storefront.Infrastructure.csproj">
+    <ProjectReference Include="..\AspNetDesign.Infrastructure\AspNetDesign.Infrastructure.csproj">
       <Project>{27e7888c-fa36-4ad8-bbf8-8f0a4093182c}</Project>
-      <Name>Agathas.Storefront.Infrastructure</Name>
+      <Name>AspNetDesign.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Agathas.Storefront.Model\Agathas.Storefront.Model.csproj">
+    <ProjectReference Include="..\AspNetDesign.Model\AspNetDesign.Model.csproj">
       <Project>{74f3ec3d-da22-485f-99a2-cccd8ce2ff2a}</Project>
-      <Name>Agathas.Storefront.Model</Name>
+      <Name>AspNetDesign.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Agathas.Storefront.Services\Agathas.Storefront.Services.csproj">
+    <ProjectReference Include="..\AspNetDesign.Services\AspNetDesign.Services.csproj">
       <Project>{61d0174d-9f84-4bca-8dc9-dd3b05c11edb}</Project>
-      <Name>Agathas.Storefront.Services</Name>
+      <Name>AspNetDesign.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,11 +1,11 @@
-﻿using Agathas.Storefront.Infrastructure.Quering;
+﻿using AspNetDesign.Infrastructure.Quering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Infrastructure.Domain
+namespace AspNetDesign.Infrastructure.Domain
 {
     public interface IReadOnlyRepository<T, TId>  where T : IAggregateRoot
     {

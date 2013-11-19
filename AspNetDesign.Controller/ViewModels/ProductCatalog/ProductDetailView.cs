@@ -1,6 +1,6 @@
-﻿using Agathas.Storefront.Services.ViewModels;
+﻿using AspNetDesign.Services.ViewModels;
 
-namespace Agathas.StorefrontController.ViewModels.ProductCatalog
+namespace AspNetDesignController.ViewModels.ProductCatalog
 {
     public class ProductDetailView : BaseProductCatalogPageView 
     {

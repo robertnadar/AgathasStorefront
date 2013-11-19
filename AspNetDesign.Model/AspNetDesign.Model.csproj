@@ -7,8 +7,8 @@
     <ProjectGuid>{74F3EC3D-DA22-485F-99A2-CCCD8CE2FF2A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Agathas.Storefront.Model</RootNamespace>
-    <AssemblyName>Agathas.Storefront.Model</AssemblyName>
+    <RootNamespace>AspNetDesign.Model</RootNamespace>
+    <AssemblyName>AspNetDesign.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -54,10 +54,9 @@
   <ItemGroup>
     <ProjectReference Include="..\AspNetDesign.Infrastructure\AspNetDesign.Infrastructure.csproj">
       <Project>{27e7888c-fa36-4ad8-bbf8-8f0a4093182c}</Project>
-      <Name>Agathas.Storefront.Infrastructure</Name>
+      <Name>AspNetDesign.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

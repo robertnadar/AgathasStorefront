@@ -1,16 +1,16 @@
-﻿using Agathas.Storefront.Infrastructure.Quering;
-using Agathas.Storefront.Model.Categories;
-using Agathas.Storefront.Model.Products;
-using Agathas.Storefront.Services.Interfaces;
-using Agathas.Storefront.Services.Messaging.ProductCatalogService;
+﻿using AspNetDesign.Infrastructure.Quering;
+using AspNetDesign.Model.Categories;
+using AspNetDesign.Model.Products;
+using AspNetDesign.Services.Interfaces;
+using AspNetDesign.Services.Messaging.ProductCatalogService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Agathas.Storefront.Services.Mapping;
+using AspNetDesign.Services.Mapping;
 
-namespace Agathas.Storefront.Services.Implementations
+namespace AspNetDesign.Services.Implementations
 {
     public class ProductCatalogService : IProductCatalogService
     {

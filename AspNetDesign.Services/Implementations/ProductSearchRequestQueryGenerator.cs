@@ -1,13 +1,13 @@
-﻿using Agathas.Storefront.Infrastructure.Quering;
-using Agathas.Storefront.Model.Products;
-using Agathas.Storefront.Services.Messaging.ProductCatalogService;
+﻿using AspNetDesign.Infrastructure.Quering;
+using AspNetDesign.Model.Products;
+using AspNetDesign.Services.Messaging.ProductCatalogService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Services.Implementations
+namespace AspNetDesign.Services.Implementations
 {
     public class ProductSearchRequestQueryGenerator
     {

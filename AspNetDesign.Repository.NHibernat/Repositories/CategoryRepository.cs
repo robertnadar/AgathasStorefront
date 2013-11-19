@@ -1,7 +1,7 @@
-﻿using Agathas.Storefront.Infrastructure.Domain;
-using Agathas.Storefront.Model.Categories;
+﻿using AspNetDesign.Infrastructure.Domain;
+using AspNetDesign.Model.Categories;
 
-namespace Agathas.Storefront.Repository.NHibernat.Repositories
+namespace AspNetDesign.Repository.NHibernat.Repositories
 {
     public class CategoryRepository : Repository<Category, int>, ICategoryRepository
     {

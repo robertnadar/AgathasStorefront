@@ -1,4 +1,4 @@
-﻿using Agathas.Storefront.Repository.NHibernat.SessionStorage;
+﻿using AspNetDesign.Repository.NHibernat.SessionStorage;
 using NHibernate;
 using NHibernate.Cfg;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Repository.NHibernat
+namespace AspNetDesign.Repository.NHibernat
 {
     public static class SessionFactory
     {
@@ -16,7 +16,7 @@ namespace Agathas.Storefront.Repository.NHibernat
         private static void Init()
         {
             Configuration config = new Configuration();
-            config.AddAssembly("Agathas.Storefront.Repository.NHibernat");
+            config.AddAssembly("AspNetDesign.Repository.NHibernat");
 
             log4net.Config.XmlConfigurator.Configure();
             config.Configure();

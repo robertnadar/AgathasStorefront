@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Services.Messaging.ProductCatalogService
+namespace AspNetDesign.Services.Messaging.ProductCatalogService
 {
     public enum ProductsSortBy
     {

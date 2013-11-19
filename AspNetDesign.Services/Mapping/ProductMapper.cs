@@ -1,13 +1,13 @@
-﻿using Agathas.Storefront.Model.Products;
-using Agathas.Storefront.Services.Messaging.ProductCatalogService;
-using Agathas.Storefront.Services.ViewModels;
+﻿using AspNetDesign.Model.Products;
+using AspNetDesign.Services.Messaging.ProductCatalogService;
+using AspNetDesign.Services.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Services.Mapping
+namespace AspNetDesign.Services.Mapping
 {
     public static class ProductMapper
     {

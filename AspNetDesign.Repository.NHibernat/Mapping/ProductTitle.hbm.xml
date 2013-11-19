@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
-namespace="Agathas.Storefront.Model.Products"
-assembly="Agathas.Storefront.Model">
+namespace="AspNetDesign.Model.Products"
+assembly="AspNetDesign.Model">
   <class name="ProductTitle" table="ProductTitles" lazy="false" >
     <id name="Id" column="ProductTitleId" type="int" unsaved-value="0">
       <generator class="native" />
@@ -14,7 +14,7 @@ assembly="Agathas.Storefront.Model">
     </property>
     <many-to-one name="Color" class="ProductColor" column="ColorId" not-null="true"/>
     <many-to-one name="Brand" class="Brand" column="BrandId"    not-null="true"/>
-    <many-to-one name="Category" class="Agathas.Storefront.Model.Categories.Category"    column="CategoryId"    not-null="true"
+    <many-to-one name="Category" class="AspNetDesign.Model.Categories.Category"    column="CategoryId"    not-null="true"
     lazy="false"/>
     <bag name="Products" inverse="true" cascade="all" lazy="false" fetch="join" >
       <key column="ProductTitleId"/>

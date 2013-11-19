@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Model.Products
+namespace AspNetDesign.Model.Products
 {
     public interface IProductAttribute
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace Agathas.Storefront.Repository.NHibernat.SessionStorage
+namespace AspNetDesign.Repository.NHibernat.SessionStorage
 {
     public class HttpSessionContainer : ISessionStorageContainer
     {

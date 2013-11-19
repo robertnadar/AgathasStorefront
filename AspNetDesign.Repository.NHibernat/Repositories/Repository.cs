@@ -1,9 +1,9 @@
-﻿using Agathas.Storefront.Infrastructure.Domain;
-using Agathas.Storefront.Infrastructure.Quering;
+﻿using AspNetDesign.Infrastructure.Domain;
+using AspNetDesign.Infrastructure.Quering;
 using NHibernate;
 using System.Collections.Generic;
 
-namespace Agathas.Storefront.Repository.NHibernat.Repositories
+namespace AspNetDesign.Repository.NHibernat.Repositories
 {
     public abstract class Repository<T, TEntityKey> where T: IAggregateRoot
     {

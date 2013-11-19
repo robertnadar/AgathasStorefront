@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace Agathas.Storefront.Infrastructure.Helpers
+namespace AspNetDesign.Infrastructure.Helpers
 {
     public class UrlHelper
     {

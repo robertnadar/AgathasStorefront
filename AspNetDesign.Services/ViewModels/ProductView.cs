@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Services.ViewModels
+namespace AspNetDesign.Services.ViewModels
 {
     public class ProductView
     {

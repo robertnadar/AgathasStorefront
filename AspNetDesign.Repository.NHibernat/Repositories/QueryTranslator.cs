@@ -1,4 +1,4 @@
-﻿using Agathas.Storefront.Infrastructure.Quering;
+﻿using AspNetDesign.Infrastructure.Quering;
 using NHibernate;
 using NHibernate.Criterion;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Repository.NHibernat.Repositories
+namespace AspNetDesign.Repository.NHibernat.Repositories
 {
     public static class QueryTranslator
     {

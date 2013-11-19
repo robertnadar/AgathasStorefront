@@ -7,8 +7,8 @@
     <ProjectGuid>{61D0174D-9F84-4BCA-8DC9-DD3B05C11EDB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Agathas.Storefront.Services</RootNamespace>
-    <AssemblyName>Agathas.Storefront.Services</AssemblyName>
+    <RootNamespace>AspNetDesign.Services</RootNamespace>
+    <AssemblyName>AspNetDesign.Services</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -69,11 +69,11 @@
   <ItemGroup>
     <ProjectReference Include="..\AspNetDesign.Infrastructure\AspNetDesign.Infrastructure.csproj">
       <Project>{27e7888c-fa36-4ad8-bbf8-8f0a4093182c}</Project>
-      <Name>Agathas.Storefront.Infrastructure</Name>
+      <Name>AspNetDesign.Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\AspNetDesign.Model\AspNetDesign.Model.csproj">
       <Project>{74f3ec3d-da22-485f-99a2-cccd8ce2ff2a}</Project>
-      <Name>Agathas.Storefront.Model</Name>
+      <Name>AspNetDesign.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

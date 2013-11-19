@@ -1,4 +1,4 @@
-﻿using Agathas.Storefront.Infrastructure.Configuration;
+﻿using AspNetDesign.Infrastructure.Configuration;
 using log4net;
 using log4net.Config;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Infrastructure.Logging
+namespace AspNetDesign.Infrastructure.Logging
 {
     public class Log4NetAdapter : ILogger 
     {

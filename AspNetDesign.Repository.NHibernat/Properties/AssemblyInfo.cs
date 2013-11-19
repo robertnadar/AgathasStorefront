@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Agathas.Storefront.Repository.NHibernat")]
+[assembly: AssemblyTitle("AspNetDesign.Repository.NHibernat")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP")]
-[assembly: AssemblyProduct("Agathas.Storefront.Repository.NHibernat")]
+[assembly: AssemblyProduct("AspNetDesign.Repository.NHibernat")]
 [assembly: AssemblyCopyright("Copyright © HP 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

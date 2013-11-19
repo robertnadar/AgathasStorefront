@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Infrastructure.Configuration
+namespace AspNetDesign.Infrastructure.Configuration
 {
     public class WebConfigApplicationSettings : IApplicationSettings
     {

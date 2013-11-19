@@ -1,12 +1,12 @@
-﻿using Agathas.Storefront.Infrastructure.Domain;
-using Agathas.Storefront.Model.Categories;
+﻿using AspNetDesign.Infrastructure.Domain;
+using AspNetDesign.Model.Categories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Agathas.Storefront.Model.Products
+namespace AspNetDesign.Model.Products
 {
     public class Product : EntityBase<int>, IAggregateRoot
     {

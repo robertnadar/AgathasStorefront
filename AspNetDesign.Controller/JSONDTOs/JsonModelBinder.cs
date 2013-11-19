@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace Agathas.StorefrontController.JSONDTOs
+namespace AspNetDesignController.JSONDTOs
 {
     public class JsonModelBinder :IModelBinder
     {

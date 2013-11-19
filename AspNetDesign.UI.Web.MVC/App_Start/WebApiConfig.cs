@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace Agathas.Storefront.UI.Web.MVC
+namespace AspNetDesign.UI.Web.MVC
 {
     public static class WebApiConfig
     {
