@@ -1,6 +1,6 @@
 ﻿using AspNetDesign.Services.ViewModels;
 
-namespace AspNetDesignController.ViewModels.ProductCatalog
+namespace AspNetDesign.Controller.ViewModels.ProductCatalog
 {
     public class ProductDetailView : BaseProductCatalogPageView 
     {

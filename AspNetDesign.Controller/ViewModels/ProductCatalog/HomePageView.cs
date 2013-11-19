@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AspNetDesignController.ViewModels.ProductCatalog
+namespace AspNetDesign.Controller.ViewModels.ProductCatalog
 {
     public class HomePageView : BaseProductCatalogPageView
     {

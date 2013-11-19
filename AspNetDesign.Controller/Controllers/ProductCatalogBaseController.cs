@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace AspNetDesignController.Controllers
+namespace AspNetDesign.Controller.Controllers
 {
-    public class ProductCatalogBaseController : Controller
+    public class ProductCatalogBaseController : System.Web.Mvc.Controller
     {
         private readonly IProductCatalogService _productCatalogService;
         public ProductCatalogBaseController(IProductCatalogService productCatalogService)

@@ -1,6 +1,6 @@
 ﻿using AspNetDesign.Services.Interfaces;
 using AspNetDesign.Services.Messaging.ProductCatalogService;
-using AspNetDesignController.ViewModels.ProductCatalog;
+using AspNetDesign.Controller.ViewModels.ProductCatalog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace AspNetDesignController.Controllers
+namespace AspNetDesign.Controller.Controllers
 {
     public class HomeController : ProductCatalogBaseController
     {

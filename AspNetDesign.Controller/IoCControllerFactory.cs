@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Routing;
-namespace AspNetDesignController
+namespace AspNetDesign.Controller
 {
     public class IoCControllerFactory : DefaultControllerFactory
     {
