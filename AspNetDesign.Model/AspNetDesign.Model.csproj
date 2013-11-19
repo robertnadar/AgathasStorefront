@@ -52,7 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Agathas.Storefront.Infrastructure\Agathas.Storefront.Infrastructure.csproj">
+    <ProjectReference Include="..\AspNetDesign.Infrastructure\AspNetDesign.Infrastructure.csproj">
       <Project>{27e7888c-fa36-4ad8-bbf8-8f0a4093182c}</Project>
       <Name>Agathas.Storefront.Infrastructure</Name>
     </ProjectReference>

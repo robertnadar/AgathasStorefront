@@ -139,27 +139,27 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Agathas.Storefront.Infrastructure\Agathas.Storefront.Infrastructure.csproj">
+    <ProjectReference Include="..\AspNetDesign.Infrastructure\AspNetDesign.Infrastructure.csproj">
       <Project>{27e7888c-fa36-4ad8-bbf8-8f0a4093182c}</Project>
       <Name>Agathas.Storefront.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Agathas.Storefront.Model\Agathas.Storefront.Model.csproj">
+    <ProjectReference Include="..\AspNetDesign.Model\AspNetDesign.Model.csproj">
       <Project>{74f3ec3d-da22-485f-99a2-cccd8ce2ff2a}</Project>
       <Name>Agathas.Storefront.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Agathas.Storefront.Repository.NHibernat\Agathas.Storefront.Repository.NHibernat.csproj">
+    <ProjectReference Include="..\AspNetDesign.Repository.NHibernat\AspNetDesign.Repository.NHibernat.csproj">
       <Project>{8ad3d81a-2bc6-4fa7-bea0-8508073513bb}</Project>
       <Name>Agathas.Storefront.Repository.NHibernat</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Agathas.Storefront.Services.Cache\Agathas.Storefront.Services.Cache.csproj">
+    <ProjectReference Include="..\AspNetDesign.Services.Cache\AspNetDesign.Services.Cache.csproj">
       <Project>{c712f675-cade-410a-856f-5096a62fb61e}</Project>
       <Name>Agathas.Storefront.Services.Cache</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Agathas.Storefront.Services\Agathas.Storefront.Services.csproj">
+    <ProjectReference Include="..\AspNetDesign.Services\AspNetDesign.Services.csproj">
       <Project>{61d0174d-9f84-4bca-8dc9-dd3b05c11edb}</Project>
       <Name>Agathas.Storefront.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Agathas.StorefrontController\Agathas.Storefront.Controller.csproj">
+    <ProjectReference Include="..\AspNetDesign.Controller\AspNetDesign.Controller.csproj">
       <Project>{a8840a91-f765-4fad-b2fe-188239cae2f9}</Project>
       <Name>Agathas.Storefront.Controller</Name>
     </ProjectReference>

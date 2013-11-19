@@ -67,11 +67,11 @@
     <Compile Include="ViewModels\RefinementGroupings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Agathas.Storefront.Infrastructure\Agathas.Storefront.Infrastructure.csproj">
+    <ProjectReference Include="..\AspNetDesign.Infrastructure\AspNetDesign.Infrastructure.csproj">
       <Project>{27e7888c-fa36-4ad8-bbf8-8f0a4093182c}</Project>
       <Name>Agathas.Storefront.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Agathas.Storefront.Model\Agathas.Storefront.Model.csproj">
+    <ProjectReference Include="..\AspNetDesign.Model\AspNetDesign.Model.csproj">
       <Project>{74f3ec3d-da22-485f-99a2-cccd8ce2ff2a}</Project>
       <Name>Agathas.Storefront.Model</Name>
     </ProjectReference>

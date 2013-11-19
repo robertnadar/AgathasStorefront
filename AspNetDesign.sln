@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDesign.Controller", "Agathas.StorefrontController\AspNetDesign.Controller.csproj", "{A8840A91-F765-4FAD-B2FE-188239CAE2F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDesign.Controller", "AspNetDesign.Controller\AspNetDesign.Controller.csproj", "{A8840A91-F765-4FAD-B2FE-188239CAE2F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDesign.Infrastructure", "AspNetDesign.Infrastructure\AspNetDesign.Infrastructure.csproj", "{27E7888C-FA36-4AD8-BBF8-8F0A4093182C}"
 EndProject
