@@ -18,7 +18,7 @@
     <div id="main">
         <div id="header">
             <span><a href="<%=Html.Resolve("") %>">
-                <img alt="Clothing Store" src="<%=Html.Resolve("/Content/Images/Structure/lg_logo.png") %>" border="0" />
+                <img alt="Agatha’s Clothing Store" src="<%=Html.Resolve("/Content/Images/Structure/lg_logo.png") %>" border="0" />
             </a>
             </span>
         </div>

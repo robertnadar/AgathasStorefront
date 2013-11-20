@@ -9,7 +9,7 @@ namespace AspNetDesign.Model.Products
 {
     public class Brand : EntityBase<int>, IProductAttribute
     {
-        public string Name { get; set; }
+        public string Name { get; set; } 
 
         protected override void Validate()
         {
