@@ -1,4 +1,10 @@
-﻿using System;
+﻿using AspNetDesign.Controller;
+using AspNetDesign.Infrastructure.Configuration;
+using AspNetDesign.Infrastructure.Email;
+using AspNetDesign.Infrastructure.Logging;
+using AspNetDesign.Services;
+using StructureMap;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,11 +20,26 @@ namespace AspNetDesign.UI.Web.MVC
     {
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
+            RegisterRoutes(RouteTable.Routes);
+            BootStrapper.ConfigureDependencies();
+            AutoMapperBootStrapper.ConfigureAutoMapper();
+            ApplicationSettingsFactory.InitializeApplicationSettingsFactory(ObjectFactory.GetInstance<IApplicationSettings>());
+            LoggingFactory.InitializeLogFactory(ObjectFactory.GetInstance<ILogger>());
+            EmailServiceFactory.InitializeEmailServiceFactory(ObjectFactory.GetInstance<IEmailService>());
+            ControllerBuilder.Current.SetControllerFactory(new IoCControllerFactory());
+            LoggingFactory.GetLogger().Log("Application Started");
+        }
 
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+        public static void RegisterRoutes(RouteCollection routes)
+        {
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("{*favicon}", new { favicon = @"(.*/)?favicon.ico(/.*)?" });
+            routes.MapRoute(
+                "Default",                                              // Route name
+                "{controller}/{action}/{id}",                           // URL with parameters
+                new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
+            );
+
         }
     }
 }

@@ -17,10 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetDesign.UI.Web.MVC", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{01206A13-9DBD-44AF-B8AB-30E5A8121DCD}"
 	ProjectSection(SolutionItems) = preProject
+		libs\AutoMapper.dll = libs\AutoMapper.dll
 		libs\Iesi.Collections.dll = libs\Iesi.Collections.dll
+		libs\LinFu.DynamicProxy.dll = libs\LinFu.DynamicProxy.dll
 		libs\log4net.dll = libs\log4net.dll
+		libs\NHibernate.ByteCode.LinFu.dll = libs\NHibernate.ByteCode.LinFu.dll
 		libs\NHibernate.dll = libs\NHibernate.dll
 		libs\StructureMap.dll = libs\StructureMap.dll
+		libs\TechTalk.SpecFlow.dll = libs\TechTalk.SpecFlow.dll
 	EndProjectSection
 EndProject
 Global

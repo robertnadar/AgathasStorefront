@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AspNetDesign.Repository.NHibernat.Repositories
 {
-    public class ProductTitleRepository: Repository<ProductTitle, int>, IAggregateRoot
+    public class ProductTitleRepository: Repository<ProductTitle, int>, IProductTitleRepository
     {
         public ProductTitleRepository(IUnitOfWork uow) : base(uow)
         {

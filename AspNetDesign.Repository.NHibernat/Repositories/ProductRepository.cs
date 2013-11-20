@@ -4,7 +4,7 @@ using NHibernate;
 
 namespace AspNetDesign.Repository.NHibernat.Repositories
 {
-    public class ProductRepository : Repository<Product, int>, IAggregateRoot
+    public class ProductRepository : Repository<Product, int>, IProductRepository
     {
         public ProductRepository(IUnitOfWork uow) : base(uow)
         {

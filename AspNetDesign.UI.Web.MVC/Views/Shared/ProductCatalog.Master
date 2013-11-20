@@ -1,16 +1,22 @@
-﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage<BaseProductCatalogPageView>" %>
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewMasterPage<BaseProductCatalogPageView>" %>
 <%@ Import Namespace="AspNetDesign.Controller.ViewModels.ProductCatalog" %>
-<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">
-<asp:ContentPlaceHolder ID=ContentPlaceHolder1 runat="server">
-</asp:ContentPlaceHolder>
+<asp:Content ID="productTitleContent" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server">            
+    </asp:ContentPlaceHolder>   
+</asp:Content> 
+ 
+ 
+<asp:Content ID="productMainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">            
+
+    </asp:ContentPlaceHolder>   
+</asp:Content> 
+
+
+<asp:Content ID="productMenuContent" ContentPlaceHolderID="MenuContent" runat="server">
+    <asp:ContentPlaceHolder ID="MenuContent" runat="server">            
+        <% Html.RenderPartial("~/Views/Shared/Categories.ascx",
+                            ((BaseProductCatalogPageView)Model).Categories); %>  
+    </asp:ContentPlaceHolder>       
 </asp:Content>
-<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
-<asp:ContentPlaceHolder ID=ContentPlaceHolder2 runat="server">
-</asp:ContentPlaceHolder>
-</asp:Content>
-<asp:Content ID="headerBasketSummary" ContentPlaceHolderID="headerBasketSummary" runat="server">
-</asp:Content>
-<asp:Content ID="MenuContent" ContentPlaceHolderID="MenuContent" runat="server">
-<asp:ContentPlaceHolder ID=ContentPlaceHolder3 runat="server"><% Html.RenderPartial("~/Views/Shared/Categories.ascx", ((BaseProductCatalogPageView)Model).Categories); %>
-</asp:ContentPlaceHolder>
-</asp:Content>
+

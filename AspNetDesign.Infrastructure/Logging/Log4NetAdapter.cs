@@ -21,7 +21,7 @@ namespace AspNetDesign.Infrastructure.Logging
 
         public void Log(string message)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
