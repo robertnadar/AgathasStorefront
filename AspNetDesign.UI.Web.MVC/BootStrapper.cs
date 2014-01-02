@@ -22,6 +22,7 @@ namespace AspNetDesign.UI.Web.MVC
                 x.AddRegistry<ControllerRegistry>();
             });
         }
+
         public class ControllerRegistry : Registry
         {
             public ControllerRegistry()
