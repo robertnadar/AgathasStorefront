@@ -53,15 +53,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductCatalogBaseController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="CookieDataKeys.cs" />
     <Compile Include="IoCControllerFactory.cs" />
     <Compile Include="JSONDTOs\JsonModelBinder.cs" />
     <Compile Include="JSONDTOs\JsonProductSearchRequest.cs" />
     <Compile Include="JSONDTOs\JsonRefinementGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BasePageView.cs" />
+    <Compile Include="ViewModels\BasketSummaryView.cs" />
     <Compile Include="ViewModels\ProductCatalog\BaseProductCatalogPageView.cs" />
+    <Compile Include="ViewModels\ProductCatalog\BasketDetailView.cs" />
     <Compile Include="ViewModels\ProductCatalog\HomePageView.cs" />
     <Compile Include="ViewModels\ProductCatalog\ProductDetailView.cs" />
     <Compile Include="ViewModels\ProductCatalog\ProductSearchResultView.cs" />

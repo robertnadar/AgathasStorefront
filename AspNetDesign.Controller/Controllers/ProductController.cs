@@ -2,6 +2,7 @@
 using AspNetDesign.Controller.JSONDTOs;
 using AspNetDesign.Controller.ViewModels.ProductCatalog;
 using AspNetDesign.Infrastructure.Configuration;
+using AspNetDesign.Infrastructure.CookieStorage;
 using AspNetDesign.Services.Interfaces;
 using AspNetDesign.Services.Messaging.ProductCatalogService;
 using AspNetDesign.Services.ViewModels;
@@ -13,7 +14,7 @@ namespace AspNet.DesignController.Controllers
     public class ProductController : ProductCatalogBaseController
     {
         private readonly IProductCatalogService _productService;
-        public ProductController(IProductCatalogService productService) : base(productService)
+        public ProductController(IProductCatalogService productService, ICookieStorageService cookieStorageService) : base(cookieStorageService, productService)
         {
             _productService = productService;
         }
@@ -29,6 +30,7 @@ namespace AspNet.DesignController.Controllers
         private ProductSearchResultView GetProductSearchResultViewFrom(GetProductsByCategoryResponse response)
         {
             ProductSearchResultView productSearchResultView = new ProductSearchResultView();
+            productSearchResultView.BasketSummary = base.GetBasketSummaryView();
             productSearchResultView.Categories = base.GetCategories();
             productSearchResultView.CurrentPage = response.CurrentPage;
             productSearchResultView.NoOfTitlesFound = response.NoOfTitlesFound;
@@ -98,6 +100,7 @@ namespace AspNet.DesignController.Controllers
             ProductView productView = response.Product;
             productDetailView.Product = productView;
             productDetailView.Categories = base.GetCategories();
+            productDetailView.BasketSummary = base.GetBasketSummaryView();
             return View(productDetailView);
         }
     }

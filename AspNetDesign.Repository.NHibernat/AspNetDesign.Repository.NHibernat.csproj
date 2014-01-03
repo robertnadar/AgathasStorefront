@@ -70,7 +70,9 @@
   <ItemGroup>
     <Compile Include="NHUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BasketRepository.cs" />
     <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\DeliveryOptionRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\ProductTitleRepository.cs" />
     <Compile Include="Repositories\QueryTranslator.cs" />
@@ -98,6 +100,15 @@
       <Project>{74f3ec3d-da22-485f-99a2-cccd8ce2ff2a}</Project>
       <Name>AspNetDesign.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Courier.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mapping\Basket.hbm.xml" />
+    <Content Include="Mapping\BasketItem.hbm.xml" />
+    <Content Include="Mapping\DeliveryOption.hbm.xml" />
+    <Content Include="Mapping\ShippingService.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
