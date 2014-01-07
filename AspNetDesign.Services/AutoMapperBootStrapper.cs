@@ -1,5 +1,6 @@
 ﻿using AspNetDesign.Model.Basket;
 using AspNetDesign.Model.Categories;
+using AspNetDesign.Model.Customers;
 using AspNetDesign.Model.Products;
 using AspNetDesign.Model.Shipping;
 using AspNetDesign.Services.ViewModels;
@@ -24,6 +25,10 @@ namespace AspNetDesign.Services
             Mapper.CreateMap<DeliveryOption, DeliveryOptionView>();
             Mapper.CreateMap<BasketItem, BasketItemView>();
             Mapper.CreateMap<Basket, BasketView>();
+
+            // Customer
+            Mapper.CreateMap<Customer, CustomerView>();
+            Mapper.CreateMap<DeliveryAddress, DeliveryAddressView>();
 
             //IProductAttribute
             Mapper.CreateMap<IProductAttribute, Refinement>();

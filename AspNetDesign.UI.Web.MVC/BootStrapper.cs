@@ -1,10 +1,13 @@
-﻿using AspNetDesign.Infrastructure.Configuration;
+﻿using AspNetDesign.Controller.ActionArguments;
+using AspNetDesign.Infrastructure.Authentication;
+using AspNetDesign.Infrastructure.Configuration;
 using AspNetDesign.Infrastructure.CookieStorage;
 using AspNetDesign.Infrastructure.Domain;
 using AspNetDesign.Infrastructure.Email;
 using AspNetDesign.Infrastructure.Logging;
 using AspNetDesign.Model.Basket;
 using AspNetDesign.Model.Categories;
+using AspNetDesign.Model.Customers;
 using AspNetDesign.Model.Products;
 using AspNetDesign.Model.Shipping;
 using AspNetDesign.Repository.NHibernat;
@@ -36,6 +39,7 @@ namespace AspNetDesign.UI.Web.MVC
                 For<ICategoryRepository>().Use<CategoryRepository>();
                 For<IProductTitleRepository>().Use<ProductTitleRepository>();
                 For<IProductRepository>().Use<ProductRepository>();
+                For<ICustomerRepository>().Use<CustomerRepository>();
 
                 For<IUnitOfWork>().Use<NHUnitOfWork>();
 
@@ -43,6 +47,7 @@ namespace AspNetDesign.UI.Web.MVC
                 For<IProductCatalogService>().Use<ProductCatalogService>();
                 For<IBasketService>().Use<BasketService>();
                 For<ICookieStorageService>().Use<CookieStorageService>();
+                For<ICustomerService>().Use<CustomerService>();
 
                 // Application Settings
                 For<IApplicationSettings>().Use<WebConfigApplicationSettings>();
@@ -52,6 +57,15 @@ namespace AspNetDesign.UI.Web.MVC
                 
                 // E-Mail Service
                 For<IEmailService>().Use<TextLoggingEmailService>();
+
+                // Authentication
+                For<IExternalAuthenticationService>().Use<JanrainAuthentication>();
+                For<IFormsAuthentication>().Use<AspFormsAuthentication>();
+                For<ILocalAuthenticationService>().Use<AspMembershipAuthentication>();
+
+                // Controller Helpers
+                For<IActionArguments>().Use
+                <HttpRequestActionArguments>();
             }
         }
     }

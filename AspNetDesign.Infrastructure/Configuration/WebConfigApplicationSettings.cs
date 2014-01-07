@@ -17,5 +17,13 @@ namespace AspNetDesign.Infrastructure.Configuration
         {
             get { return ConfigurationManager.AppSettings["NoOfResultsPerPage"]; }
         }
+
+        public string JanrainApiKey
+        {
+            get
+            {
+                return ConfigurationManager.AppSettings["JanrainApiKey"];
+            }
+        }
     }
 }

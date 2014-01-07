@@ -23,6 +23,18 @@
             </span>
         </div>
         <div id="headerSummary">
+            <span class="basket-details">
+                <% if (Request.IsAuthenticated)
+                   {%>
+                <%= Html.ActionLink("Your Account", "Detail", "Customer") %> /
+                <%=Html.ActionLink("Log Off", "SignOut", "AccountLogOn")%>
+                <% }
+                   else
+                   { %>
+                <%= Html.ActionLink("Create Account", "Register", "AccountRegister")%> /
+                <%=Html.ActionLink("Log On", "LogOn", "AccountLogOn")%><br />
+                <% } %>
+            </span>
             <asp:ContentPlaceHolder ID="headerBasketSummary" runat="server"></asp:ContentPlaceHolder>
         </div>
         <div class="topBarContainer">
