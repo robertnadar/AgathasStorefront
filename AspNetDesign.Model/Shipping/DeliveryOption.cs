@@ -52,7 +52,7 @@ namespace AspNetDesign.Model.Shipping
 
         protected override void Validate()
         {
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
         }
     }
 }

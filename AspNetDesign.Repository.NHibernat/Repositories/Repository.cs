@@ -19,6 +19,11 @@ namespace AspNetDesign.Repository.NHibernat.Repositories
             SessionFactory.GetCurrentSession().Save(entity);
         }
 
+        public void Remove(T entity)
+        {
+            SessionFactory.GetCurrentSession().Delete(entity);
+        }
+
         public void Save(T entity)
         {
             SessionFactory.GetCurrentSession().SaveOrUpdate(entity);

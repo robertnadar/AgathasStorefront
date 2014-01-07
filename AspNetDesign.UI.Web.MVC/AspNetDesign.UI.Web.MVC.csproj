@@ -137,10 +137,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="App_Data\Shop.mdf" />
-    <Content Include="App_Data\Shop_log.ldf">
-      <DependentUpon>Shop.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\Images\Products\1.jpg" />
     <Content Include="Content\Images\Products\2.jpg" />
     <Content Include="Content\Images\Products\3.jpg" />
@@ -162,7 +158,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\agatha-common-scripts.js" />
+    <Content Include="Scripts\common-scripts.js" />
     <None Include="Scripts\jquery-1.3.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.3.2.js" />
     <None Include="Scripts\jquery-1.3.2.min-vsdoc.js" />
@@ -180,9 +176,11 @@
     <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
     <Content Include="Scripts\MicrosoftMvcAjax.js" />
     <Content Include="Scripts\MicrosoftMvcJQueryValidation.js" />
+    <Content Include="Views\Basket\View.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Product\Detail.aspx" />
     <Content Include="Views\Product\ProductSearchResults.aspx" />
+    <Content Include="Views\Shared\BasketSummary.ascx" />
     <Content Include="Views\Shared\Categories.ascx" />
     <Content Include="Views\Shared\SiteFooter.ascx" />
     <Content Include="Web.config" />
@@ -195,7 +193,9 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\ProductCatalog.Master" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

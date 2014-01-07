@@ -53,12 +53,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasketMapper.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductCatalogBaseController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="CookieDataKeys.cs" />
     <Compile Include="IoCControllerFactory.cs" />
+    <Compile Include="JSONDTOs\JsonBasketItemUpdateRequest.cs" />
+    <Compile Include="JSONDTOs\JsonBasketQtyUpdateRequest.cs" />
+    <Compile Include="JSONDTOs\JsonDtoMapper.cs" />
     <Compile Include="JSONDTOs\JsonModelBinder.cs" />
     <Compile Include="JSONDTOs\JsonProductSearchRequest.cs" />
     <Compile Include="JSONDTOs\JsonRefinementGroup.cs" />

@@ -10,6 +10,6 @@ namespace AspNetDesign.Infrastructure.Domain
     {
         void Save(T entity);
         void Add(T entity);
-        void Update(T entity);
+        void Remove(T entity);
     }
 }

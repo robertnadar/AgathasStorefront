@@ -12,7 +12,7 @@
     <script type="text/javascript" src="<%=Html.Resolve("/Scripts/jquery-ui-1.8.1.custom.min.js") %>"></script>
     <script type="text/javascript" src="<%=Html.Resolve("/Scripts/jquery-jtemplates.js") %>"></script>
     <script type="text/javascript" src="<%=Html.Resolve("/Scripts/json2.js") %>"></script>
-    <script type="text/javascript" src="<%=Html.Resolve("/Scripts/agatha-common-scripts.js") %>"></script>
+    <script type="text/javascript" src="<%=Html.Resolve("/Scripts/common-scripts.js") %>"></script>
 </head>
 <body>
     <div id="main">

@@ -8,6 +8,17 @@
     <%=Model.Product.BrandName %> <%=Model.Product.Name %> for only <%=Model.Product.Price %>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <script type="text/javascript">
+        function addProductToBasket() {
+            showOverlay("smoverlay", "basketSummary", 5);
+            var postData = { productId: $("#productsizes").val() };
+            $.post('<%=Html.Resolve("/Basket/AddToBasket") %>', postData, updateBasket, "json");
+        }
+        function updateBasket(basketSummaryView) {
+            updateBasketSummary(basketSummaryView);
+            hideOverlay("smoverlay");
+        }
+</script>
     <h2><%=Model.Product.BrandName %> <%=Model.Product.Name %></h2>
     <div>
         <span style="float: left">
@@ -24,7 +35,7 @@
                     <%
 }%>
                 </select>
-                <input type="button" value="+ Add to cart" />
+                <input type="button" onclick="JavaScript:addProductToBasket();" value="+ Add to cart" />
             </p>
             <p>
                 * - Rutrum mattis nulla sodales<br />
