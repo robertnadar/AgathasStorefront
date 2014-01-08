@@ -11,5 +11,6 @@ namespace AspNetDesign.Services.Messaging.ProductCatalogService
     {
         public bool CustomerFound { get; set; }
         public CustomerView Customer { get; set; }
+        public IEnumerable<OrderSummaryView> Orders { get; set; }
     }
 }

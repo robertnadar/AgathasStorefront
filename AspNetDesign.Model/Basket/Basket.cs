@@ -37,7 +37,7 @@ namespace AspNetDesign.Model.Basket
             get { return _items.Sum(i => i.Qty * i.Product.Price); }
         }
 
-        private decimal DeliveryCost()
+        public decimal DeliveryCost()
         {
             return DeliveryOption.GetDeliveryChargeForBasketTotalOf(ItemTotal);
         }

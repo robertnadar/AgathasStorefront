@@ -22,7 +22,8 @@ namespace AspNetDesign.UI.Web.MVC
         {
             RegisterRoutes(RouteTable.Routes);
             BootStrapper.ConfigureDependencies();
-            AutoMapperBootStrapper.ConfigureAutoMapper();
+            AspNetDesign.Controller.AutoMapperBootStrapper.ConfigureAutoMapper();
+            Services.AutoMapperBootStrapper.ConfigureAutoMapper();
             ApplicationSettingsFactory.InitializeApplicationSettingsFactory(ObjectFactory.GetInstance<IApplicationSettings>());
             LoggingFactory.InitializeLogFactory(ObjectFactory.GetInstance<ILogger>());
             EmailServiceFactory.InitializeEmailServiceFactory(ObjectFactory.GetInstance<IEmailService>());

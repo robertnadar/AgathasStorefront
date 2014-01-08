@@ -11,5 +11,7 @@ namespace AspNetDesign.Infrastructure.Configuration
         string LoggerName { get; }
         string NoOfResultsPerPage { get; }
         string JanrainApiKey { get; }
+        string PayPalBusinessEmail { get; }
+        string PayPalPaymentPostToUrl { get; }
     }
 }

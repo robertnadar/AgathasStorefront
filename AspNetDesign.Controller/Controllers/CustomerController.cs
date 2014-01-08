@@ -14,12 +14,12 @@ using System.Web.Mvc;
 namespace AspNetDesign.Controller.Controllers
 {
     [Authorize]
-    public class CustomersController : BaseController
+    public class CustomerController : BaseController
     {
         private readonly ICustomerService _customerService;
         private readonly IFormsAuthentication _formsAuthentication;
 
-        public CustomersController(ICookieStorageService cookieStorageService, ICustomerService customerService, IFormsAuthentication formsAuthentication)
+        public CustomerController(ICookieStorageService cookieStorageService, ICustomerService customerService, IFormsAuthentication formsAuthentication)
             : base(cookieStorageService)
         {
             _customerService = customerService;

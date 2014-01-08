@@ -25,5 +25,16 @@ namespace AspNetDesign.Infrastructure.Configuration
                 return ConfigurationManager.AppSettings["JanrainApiKey"];
             }
         }
+
+        public string PayPalBusinessEmail
+        {
+            get { return ConfigurationManager.AppSettings["PayPalBusinessEmail"]; }
+        }
+
+        public string PayPalPaymentPostToUrl
+        {
+            get { return ConfigurationManager.AppSettings["PayPalPaymentPostToUrl"]; }
+        }
+
     }
 }

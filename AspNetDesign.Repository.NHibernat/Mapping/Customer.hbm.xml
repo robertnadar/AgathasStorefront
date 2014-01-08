@@ -24,5 +24,9 @@ assembly="AspNetDesign.Model">
       <key column="CustomerId"/>
       <one-to-many class="DeliveryAddress"></one-to-many>
     </bag>
+    <bag name="Orders" inverse="false" cascade="all-delete-orphan" lazy="true" >
+      <key column="CustomerId"/>
+      <one-to-many class="AspNetDesign.Model.Orders.Order"></one-to-many>
+    </bag>
   </class>
 </hibernate-mapping>

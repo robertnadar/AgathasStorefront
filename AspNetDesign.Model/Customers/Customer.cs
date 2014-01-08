@@ -1,4 +1,5 @@
 ﻿using AspNetDesign.Infrastructure.Domain;
+using AspNetDesign.Model.Orders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace AspNetDesign.Model.Customers
         public string FirstName { get; set; }
         public string SecondName { get; set; }
         public string Email { get; set; }
+
+        public IList<Order> Orders { get; set; }
 
         public void AddAddress(DeliveryAddress deliveryAddress)
         {

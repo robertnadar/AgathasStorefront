@@ -5,9 +5,8 @@
     (function () {
         if (typeof window.janrain !== 'object') window.janrain = {};
         if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
-
-        janrain.settings.tokenUrl = '<%=Server.UrlEncode(Html.Resolve("/" + Model.Controller +"/" + Model.Action + "/?returnUrl=" + Model.ReturnUrl))%>"';
-
+        
+        janrain.settings.tokenUrl = '<%=Html.Resolve("/" + Model.Controller +"/" + Model.Action + "/?returnUrl=" + Model.ReturnUrl)%>';
         function isReady() { janrain.ready = true; };
         if (document.addEventListener) {
             document.addEventListener("DOMContentLoaded", isReady, false);

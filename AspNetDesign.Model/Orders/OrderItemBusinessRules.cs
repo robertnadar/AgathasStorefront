@@ -1,0 +1,17 @@
+﻿using AspNetDesign.Infrastructure.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AspNetDesign.Model.Orders
+{
+    public class OrderItemBusinessRules
+    {
+        public static readonly BusinessRule OrderRequired = new BusinessRule("OrderRequired", "An order item must be associated with an order.");
+        public static readonly BusinessRule PriceNonNegative = new BusinessRule("Price", "An order item must have a non negative price value.");
+        public static readonly BusinessRule QtyNonNegative = new BusinessRule("Qty", "An order item must have a positive qty value.");
+        public static readonly BusinessRule ProductRequired = new BusinessRule("Product", "An order item must be associated with a valid product.");
+    }
+}

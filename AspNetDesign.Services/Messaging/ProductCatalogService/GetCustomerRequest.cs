@@ -9,5 +9,6 @@ namespace AspNetDesign.Services.Messaging.ProductCatalogService
     public class GetCustomerRequest
     {
         public string CustomerIdentityToken { get; set; }
+        public bool LoadOrderSummary { get; set; }
     }
 }

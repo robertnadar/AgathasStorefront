@@ -74,6 +74,9 @@
     <Compile Include="Repositories\CategoryRepository.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
     <Compile Include="Repositories\DeliveryOptionRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\ProductTitleRepository.cs" />
     <Compile Include="Repositories\QueryTranslator.cs" />
@@ -87,6 +90,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Mapping\Brand.hbm.xml" />
     <EmbeddedResource Include="Mapping\Category.hbm.xml" />
+    <EmbeddedResource Include="Mapping\IOrderState.hbm.xml" />
+    <EmbeddedResource Include="Mapping\Order.hbm.xml" />
+    <EmbeddedResource Include="Mapping\OrderItem.hbm.xml" />
     <EmbeddedResource Include="Mapping\Product.hbm.xml" />
     <EmbeddedResource Include="Mapping\ProductColor.hbm.xml" />
     <EmbeddedResource Include="Mapping\ProductSize.hbm.xml" />

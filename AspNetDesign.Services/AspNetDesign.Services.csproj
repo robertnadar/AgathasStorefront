@@ -47,14 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperBootStrapper.cs" />
+    <Compile Include="DomainEventHandlers\OrderSubmittedHandler.cs" />
     <Compile Include="Implementations\BasketDoesNotExistException.cs" />
     <Compile Include="Implementations\BasketService.cs" />
     <Compile Include="Implementations\CustomerInvalidException.cs" />
     <Compile Include="Implementations\CustomerService.cs" />
+    <Compile Include="Implementations\OrderService.cs" />
     <Compile Include="Implementations\ProductCatalogService.cs" />
     <Compile Include="Implementations\ProductSearchRequestQueryGenerator.cs" />
     <Compile Include="Interfaces\IBasketService.cs" />
     <Compile Include="Interfaces\ICustomerService.cs" />
+    <Compile Include="Interfaces\IOrderService.cs" />
     <Compile Include="Interfaces\IProductCatalogService.cs" />
     <Compile Include="Mapping\BasketMapper.cs" />
     <Compile Include="Mapping\CategoryMapper.cs" />
@@ -62,8 +65,15 @@
     <Compile Include="Mapping\DeliveryAddressMapper.cs" />
     <Compile Include="Mapping\DeliveryOptionMapper.cs" />
     <Compile Include="Mapping\IProductAttributeMapper.cs" />
+    <Compile Include="Mapping\OrderMapper.cs" />
     <Compile Include="Mapping\ProductMapper.cs" />
     <Compile Include="Mapping\ProductTitleMapper.cs" />
+    <Compile Include="Messaging\OrderService\CreateOrderRequest.cs" />
+    <Compile Include="Messaging\OrderService\CreateOrderResponse.cs" />
+    <Compile Include="Messaging\OrderService\GetOrderRequest.cs" />
+    <Compile Include="Messaging\OrderService\GetOrderResponse.cs" />
+    <Compile Include="Messaging\OrderService\SetOrderPaymentRequest.cs" />
+    <Compile Include="Messaging\OrderService\SetOrderPaymentResponse.cs" />
     <Compile Include="Messaging\ProductCatalogService\CreateBasketRequest.cs" />
     <Compile Include="Messaging\ProductCatalogService\CreateBasketResponse.cs" />
     <Compile Include="Messaging\ProductCatalogService\CreateCustomerRequest.cs" />
@@ -96,6 +106,9 @@
     <Compile Include="ViewModels\CustomerView.cs" />
     <Compile Include="ViewModels\DeliveryAddressView.cs" />
     <Compile Include="ViewModels\DeliveryOptionView.cs" />
+    <Compile Include="ViewModels\OrderItemView.cs" />
+    <Compile Include="ViewModels\OrderSummaryView.cs" />
+    <Compile Include="ViewModels\OrderView.cs" />
     <Compile Include="ViewModels\ProductSizeOption.cs" />
     <Compile Include="ViewModels\ProductSummaryView.cs" />
     <Compile Include="ViewModels\ProductView.cs" />
