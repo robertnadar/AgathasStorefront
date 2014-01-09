@@ -1,6 +1,6 @@
-﻿<%@  Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<BasketSummaryView>" %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<BasketSummaryView>" %>
 <%@ Import Namespace="AspNetDesign.Controller.ViewModels" %>
-<div id="smoverlay" class="smoverlay"></div>
+<%--<div id="smoverlay" class="smoverlay"></div>
 <div id="basketSummary">
     <span class="basket-details">
         <%=Html.ActionLink("Your Basket", "Detail", "Basket")%>
@@ -15,4 +15,13 @@
             <% }%>
         </span>
     </span>
-</div>
+</div>--%>
+<%=Html.ActionLink("Your Basket", "Detail", "Basket")%>
+<% if (Model.NumberOfItems == 0)
+   { %>
+                    is empty
+            <% }
+   else
+   { %>
+<%=Model.NumberOfItems%> Item(s) at <%=Model.BasketTotal%>
+<% }%>

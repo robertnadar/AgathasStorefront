@@ -1,14 +1,15 @@
 ﻿<%@ Master Language="C#" MasterPageFile="Site.Master" %>
+
 <asp:Content ID="checkoutTitleContent" ContentPlaceHolderID="TitleContent" runat="server">
-<asp:ContentPlaceHolder ID=TitleContent runat="server">
-</asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+    </asp:ContentPlaceHolder>
 </asp:Content>
 <asp:Content ID="headerBasketSummary" ContentPlaceHolderID="headerBasketSummary"
-runat="server">
+    runat="server">
 </asp:Content>
 <asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MenuContent">
 </asp:Content>
 <asp:Content ID="checkoutMainContent" ContentPlaceHolderID="MainContent" runat="server">
-<asp:ContentPlaceHolder ID=MainContent runat="server">
-</asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
 </asp:Content>

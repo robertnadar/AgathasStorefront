@@ -1,7 +1,6 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
 <%@ Import Namespace="AspNetDesign.UI.Web.MVC.Helpers" %>
 <div id="prefooter">
-    <span style="float: left; margin-left: 20px;">
         <table>
             <tr>
                 <td>

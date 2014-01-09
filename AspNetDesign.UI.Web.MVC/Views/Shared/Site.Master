@@ -7,7 +7,7 @@
     <title>
         <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
     </title>
-    <link href="<%=Html.Resolve("/Content/Site.css") %>" rel="stylesheet" type="text/css" />    
+    <link href="<%=Html.Resolve("/Content/Site.css") %>" rel="stylesheet" type="text/css" />
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="<%=Html.Resolve("/Scripts/jquery-1.4.2.min.js") %>"></script>
     <script type="text/javascript" src="<%=Html.Resolve("/Scripts/jquery-ui-1.8.1.custom.min.js") %>"></script>
@@ -17,38 +17,39 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id="main">
-        <div id="header">
-            <span><a href="<%=Html.Resolve("") %>">
-                <%--<img alt="Aspnet design" src="<%=Html.Resolve("/Content/Images/Structure/lg_logo.png") %>" border="0" />--%>
-            </a>
-            </span>
-        </div>
-        <div id="headerSummary">
-            <span class="basket-details">
-                <% if (Request.IsAuthenticated)
-                   {%>
-                <%= Html.ActionLink("Your Account", "Detail", "Customer") %> /
-                <%=Html.ActionLink("Log Off", "SignOut", "AccountLogOn")%>
-                <% }
-                   else
-                   { %>
-                <%= Html.ActionLink("Create Account", "Register", "AccountRegister")%> /
-                <%=Html.ActionLink("Log On", "LogOn", "AccountLogOn")%><br />
-                <% } %>
-            </span>
-            <asp:ContentPlaceHolder ID="headerBasketSummary" runat="server"></asp:ContentPlaceHolder>
-        </div>
-        <div class="topBarContainer">
-            <div id="background">
-                <div id="navigation">
+    <div class="container">
+        <div id="background">
+            <div class="page-header">
+                <div>
+                    <img alt="Clothing Store" src="<%=Html.Resolve("/Content/Images/Structure/anu_header.png")%>" border="0" />
+                    
+                    <ul>
+                        <li>
+                            <asp:ContentPlaceHolder ID="headerBasketSummary" runat="server"></asp:ContentPlaceHolder>
+                        </li>
+                        <li>
+                            <% if (Request.IsAuthenticated)
+                               {%>
+                            <%= Html.ActionLink("Your Account", "Detail", "Customer") %> / <%=Html.ActionLink("Log Off", "SignOut", "AccountLogOn")%>
+                            <% }
+                               else
+                               { %>
+                            <%= Html.ActionLink("Create Account", "Register", "AccountRegister")%> / <%=Html.ActionLink("Log On", "LogOn", "AccountLogOn")%><br />
+                            <% } %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
                     <asp:ContentPlaceHolder ID="MenuContent" runat="server"></asp:ContentPlaceHolder>
                 </div>
-                <div id="content">
-                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-                </div>
-                <div style="clear: both;" />
+            </nav>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
             </div>
+            <div style="clear: both;" />
         </div>
         <% Html.RenderPartial("~/Views/Shared/SiteFooter.ascx"); %>
     </div>

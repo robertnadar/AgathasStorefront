@@ -9,8 +9,6 @@
 </asp:Content>
 
 <asp:Content ID="indexContent" ContentPlaceHolderID="MainContent" runat="server">
-    <img width="559" height="297" src="<%=Html.Resolve("/Content/Images/Products/product-lifestyle.jpg")%>"
-        style="border-width: 0px; padding: 0px; margin: 0px" />
     <div style="clear: both;"></div>
     <h2>Top Products</h2>
     <div id="items" style="border-width: 1px; padding: 0px; margin: 0px">

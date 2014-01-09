@@ -143,10 +143,9 @@
     <Content Include="Content\Images\Products\4.jpg" />
     <Content Include="Content\Images\Products\5.jpg" />
     <Content Include="Content\Images\Products\6.jpg" />
-    <Content Include="Content\Images\Products\product-lifestyle.jpg" />
     <Content Include="Content\Images\Structure\ajax-loader.gif" />
+    <Content Include="Content\Images\Structure\anu_header.png" />
     <Content Include="Content\Images\Structure\background.gif" />
-    <Content Include="Content\Images\Structure\lg_logo.png" />
     <Content Include="Content\Images\Structure\modal-background.png" />
     <Content Include="Content\Images\Structure\refinement-available.gif" />
     <Content Include="Content\Images\Structure\refinement-disabled.gif" />
@@ -154,7 +153,6 @@
     <Content Include="Content\Images\Structure\refinement-selecteddisabled.gif" />
     <Content Include="Content\Images\Structure\retro_background.gif" />
     <Content Include="Content\Images\Structure\sm-ajax-loader.gif" />
-    <Content Include="Content\Images\Structure\sm_logo.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
