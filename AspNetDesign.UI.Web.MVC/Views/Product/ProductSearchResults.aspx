@@ -478,7 +478,7 @@
                 <a class="item-productimage-link"
                     href="<%=Url.Action("Detail", "Product", new { id = product.Id }, null) %>">
                     <img class="item-productimage"
-                        src="<%=Html.Resolve("/Content/images/Products/" + product.Id.ToString() + ".jpg") %>" /></a>
+                        src="<%=Html.Resolve("/Content/images/Products/Earings/earing" + product.Id.ToString() + ".jpg") %>" /></a>
                 <div class="caption">
                     <%= Html.ActionLink(Html.Encode(product.BrandName) + " " + Html.Encode(product.Name), "Detail", "Product", new { id = product.Id }, null)%>
                     <%=product.Price %>
@@ -503,7 +503,7 @@
                         <a class="item-productimage-link"
                             href="<%=Html.Resolve("/Product/Detail/") %>{$T.record.Id}">
                             <img class="item-productimage"
-                                src="<%=Html.Resolve("/Content/images/Products/{$T.record.Id}.jpg") %>" /></a>
+                                src="<%=Html.Resolve("/Content/images/Products/Earings/earing{$T.record.Id}.jpg") %>" /></a>
 
                         <div class="item-productname">
                             <a href="<%=Html.Resolve("/Product/Detail/") %>

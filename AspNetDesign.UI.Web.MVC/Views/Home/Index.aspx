@@ -16,7 +16,7 @@
         <div class="thumbnail">
             <a class="item-productimage-link"
                 href="<%=Url.Action("Detail", "Product",new { id = product.Id }, null) %>">
-                <img class="item-productimage" src="<%=Html.Resolve("/Content/Images/Products/" + product.Id.ToString() +".jpg")%>" /></a>
+                <img class="item-productimage" src="<%=Html.Resolve("/Content/Images/Products/" + product.Name.ToString() +".jpg")%>" /></a>
             <div class="caption">
                 <h3><%= Html.ActionLink(product.BrandName + " " + product.Name,"Detail", "Product", new { id = product.Id }, null)%></h3>
                 <p><%= Html.Encode(product.Price)%> $</p>

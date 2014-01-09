@@ -22,7 +22,7 @@
     <h2><%=Model.Product.BrandName %> <%=Model.Product.Name %></h2>
     <div>
         <span style="float: left">
-            <img src="<%=Html.Resolve("/Content/Images/Products/"+ Model.Product.Id.ToString() + ".jpg") %>" />
+            <img src="<%=Html.Resolve("/Content/Images/Products/Earings/earing"+ Model.Product.Id.ToString() + ".jpg") %>" />
         </span>
         <div>
             <%=Model.Product.Price %><br />

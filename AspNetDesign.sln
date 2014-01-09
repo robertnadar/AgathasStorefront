@@ -27,6 +27,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{01206A13-9DB
 		libs\TechTalk.SpecFlow.dll = libs\TechTalk.SpecFlow.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{FFBA2C00-F7B1-4FC8-9B88-75BBDB69E848}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\script.sql = ..\..\..\..\Documents\script.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
