@@ -1,10 +1,27 @@
 ﻿/* Site Layout */
 html { height: 100%;  margin-bottom: 1px; }
-
 body {
-    background:url("images/Structure/retro_background.gif") repeat fixed 50% 0 #EFEFEF;
-    height: 100%; margin: 0 auto; color:#333333; 
-    font-family:Georgia,"Times New Roman",Times,serif; font-size:70%; }
+     background-color:black;
+}
+.container {
+    background-color:white;
+}
+.page-header {
+    overflow: hidden;    /* clear floats */   
+    height:100px;      
+    margin-top: 0px;   
+}
+
+.page-header div {
+    float: right;        /* float search content right */    
+    width:15%;            
+    margin-top: 20px;     
+}
+
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
 
 /*#main { margin: 0px auto; padding: 0px; border:0; width: 840px; }
 #background { background-position: left top; background: url(images/Structure/background.gif) repeat left top; }

@@ -7,51 +7,48 @@
     <title>
         <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
     </title>
-    <link href="<%=Html.Resolve("/Content/Site.css") %>" rel="stylesheet" type="text/css" />
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="<%=Html.Resolve("/Scripts/jquery-1.4.2.min.js") %>"></script>
-    <script type="text/javascript" src="<%=Html.Resolve("/Scripts/jquery-ui-1.8.1.custom.min.js") %>"></script>
-    <script type="text/javascript" src="<%=Html.Resolve("/Scripts/jquery-jtemplates.js") %>"></script>
+    <link href="<%=Html.Resolve("/Content/Site.css") %>" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script type="text/javascript" src="<%=Html.Resolve("/Scripts/json2.js") %>"></script>
     <script type="text/javascript" src="<%=Html.Resolve("/Scripts/common-scripts.js") %>"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <div id="background">
+        <div class="row">
             <div class="page-header">
+                <img alt="Clothing Store" src="<%=Html.Resolve("/Content/Images/Structure/anu_header.png")%>" border="0" />
                 <div>
-                    <img alt="Clothing Store" src="<%=Html.Resolve("/Content/Images/Structure/anu_header.png")%>" border="0" />
-                    
-                    <ul>
-                        <li>
-                            <asp:ContentPlaceHolder ID="headerBasketSummary" runat="server"></asp:ContentPlaceHolder>
-                        </li>
-                        <li>
-                            <% if (Request.IsAuthenticated)
-                               {%>
-                            <%= Html.ActionLink("Your Account", "Detail", "Customer") %> / <%=Html.ActionLink("Log Off", "SignOut", "AccountLogOn")%>
-                            <% }
-                               else
-                               { %>
-                            <%= Html.ActionLink("Create Account", "Register", "AccountRegister")%> / <%=Html.ActionLink("Log On", "LogOn", "AccountLogOn")%><br />
-                            <% } %>
-                        </li>
-                    </ul>
+                    <p>
+                        <asp:ContentPlaceHolder ID="headerBasketSummary" runat="server"></asp:ContentPlaceHolder>
+                    </p>
+                    <p>
+                        <% if (Request.IsAuthenticated)
+                           {%>
+                        <%= Html.ActionLink("Your Account", "Detail", "Customer") %> / <%=Html.ActionLink("Log Off", "SignOut", "AccountLogOn")%>
+                        <% }
+                           else
+                           { %>
+                        <%= Html.ActionLink("Create Account", "Register", "AccountRegister")%> / <%=Html.ActionLink("Log On", "LogOn", "AccountLogOn")%><br />
+                        <% } %>
+                    </p>
                 </div>
             </div>
-
             <nav class="navbar navbar-inverse" role="navigation">
                 <div class="navbar-header">
-                    <asp:ContentPlaceHolder ID="MenuContent" runat="server"></asp:ContentPlaceHolder>
+                    <a href="/" class="navbar-brand">Home</a>
+                    <a href="/" class="navbar-brand">About Us</a>
+                    <a href="/" class="navbar-brand">Contact Us</a>
                 </div>
+                <asp:ContentPlaceHolder ID="MenuContent" runat="server"></asp:ContentPlaceHolder>
             </nav>
-            <div id="content">
+            <div class="container">
                 <asp:ContentPlaceHolder ID="MainContent" runat="server" />
             </div>
-            <div style="clear: both;" />
+            <% Html.RenderPartial("~/Views/Shared/SiteFooter.ascx"); %>
         </div>
-        <% Html.RenderPartial("~/Views/Shared/SiteFooter.ascx"); %>
     </div>
 </body>
 </html>

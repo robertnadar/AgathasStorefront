@@ -1,5 +1,6 @@
-﻿<%@  Master Language="C#" MasterPageFile="Site.Master"
+﻿<%@ Master Language="C#" MasterPageFile="Site.Master"
     Inherits="System.Web.Mvc.ViewMasterPage<BaseCustomerAccountView>" %>
+
 <%@ Import Namespace="AspNetDesign.Controller.ViewModels.CustomerAccount" %>
 <asp:Content ID="CustomerTitleContent" ContentPlaceHolderID="TitleContent" runat="server">
     <asp:ContentPlaceHolder ID="TitleContent" runat="server">
@@ -9,9 +10,13 @@
     <% Html.RenderPartial("~/Views/Shared/BasketSummary.ascx", ((BaseCustomerAccountView)Model).BasketSummary); %>
 </asp:Content>
 <asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MenuContent">
-    <% Html.RenderPartial("~/Views/Shared/CustomerMenu.ascx"); %>
 </asp:Content>
 <asp:Content ID="CustomerMainContent" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:ContentPlaceHolder ID="MainContent" runat="server">
-    </asp:ContentPlaceHolder>
+    <div class="col-md-4">
+        <% Html.RenderPartial("~/Views/Shared/CustomerMenu.ascx"); %>
+    </div>
+    <div class="col-md-8">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
 </asp:Content>

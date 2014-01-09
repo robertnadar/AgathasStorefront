@@ -9,23 +9,19 @@
 </asp:Content>
 
 <asp:Content ID="indexContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div style="clear: both;"></div>
-    <h2>Top Products</h2>
-    <div id="items" style="border-width: 1px; padding: 0px; margin: 0px">
-        <ul class="items-list">
-            <% foreach (ProductSummaryView product in Model.Products)
-               {%>
-            <li class="item-detail">
-                <a class="item-productimage-link"
-                    href="<%=Url.Action("Detail", "Product",new { id = product.Id }, null) %>">
-                    <img class="item-productimage" src="<%=Html.Resolve("/Content/Images/Products/" + product.Id.ToString() +".jpg")%>" /></a>
-                <div class="item-productname"> <%= Html.ActionLink(product.BrandName + " " + product.Name,"Detail", "Product", new { id = product.Id }, null)%>
-                </div>
-                <div class="item-price">
-                    <%= Html.Encode(product.Price)%>
-                </div>
-            </li>
-            <%}%>
-        </ul>
+    <h3>Top Products</h3>   
+    <% foreach (ProductSummaryView product in Model.Products)
+       {%>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <a class="item-productimage-link"
+                href="<%=Url.Action("Detail", "Product",new { id = product.Id }, null) %>">
+                <img class="item-productimage" src="<%=Html.Resolve("/Content/Images/Products/" + product.Id.ToString() +".jpg")%>" /></a>
+            <div class="caption">
+                <h3><%= Html.ActionLink(product.BrandName + " " + product.Name,"Detail", "Product", new { id = product.Id }, null)%></h3>
+                <p><%= Html.Encode(product.Price)%> $</p>
+            </div>
+        </div>
     </div>
+    <%}%>
 </asp:Content>

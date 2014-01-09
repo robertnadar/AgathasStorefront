@@ -18,8 +18,7 @@
 
 <asp:Content ID="productMenuContent" ContentPlaceHolderID="MenuContent" runat="server">
     <asp:ContentPlaceHolder ID="MenuContent" runat="server">
-        <% Html.RenderPartial("~/Views/Shared/Categories.ascx",
-                            ((BaseProductCatalogPageView)Model).Categories); %>
+        <% Html.RenderPartial("~/Views/Shared/Categories.ascx", ((BaseProductCatalogPageView)Model).Categories); %>
     </asp:ContentPlaceHolder>
 </asp:Content>
 

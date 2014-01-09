@@ -9,11 +9,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Your Orders</h2>
-    <ul>
+    <ul class="list-group">
         <% foreach (OrderSummaryView order in Model.Orders)
            {
         %>
-        <li><%=Html.Encode(order.Created.ToLongDateString()) %>
+        <li class="list-group-item"><%=Html.Encode(order.Created.ToLongDateString()) %>
             <% if (order.IsSubmitted == false)
                { %>
             <%=Html.ActionLink("Pay", "CreatePaymentFor", "Payment", new { orderId = order.Id}, null)%>
