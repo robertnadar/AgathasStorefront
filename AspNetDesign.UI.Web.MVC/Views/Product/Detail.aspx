@@ -20,13 +20,12 @@
         }
 </script>
     <h2><%=Model.Product.BrandName %> <%=Model.Product.Name %></h2>
-    <div>
-        <span style="float: left">
-            <img src="<%=Html.Resolve("/Content/Images/Products/Earings/earing"+ Model.Product.Id.ToString() + ".jpg") %>" />
-        </span>
-        <div>
-            <%=Model.Product.Price %><br />
-            <%=Model.Product.BrandName %> <%=Model.Product.Name %><br />
+    <div class="row">
+        <div class="col-md-3">
+            <img src="<%=Html.Resolve("/Content/Images/Products/" + Model.Product.Name.ToString() + ".jpg") %>" class="imageSize"/>
+        </div>
+        <div class="col-md-9">
+            <p><%=Model.Product.Price %>$</p>
             <p>
                 <select id="productsizes">
                     <% foreach (ProductSizeOption option in Model.Product.Products)
@@ -35,7 +34,7 @@
                     <%
 }%>
                 </select>
-                <input type="button" onclick="JavaScript:addProductToBasket();" value="+ Add to cart" />
+                <input type="button" onclick="javascript:addProductToBasket();" class="btn btn-primary" value="+ Add to cart" />
             </p>
             <p>
                 * - Rutrum mattis nulla sodales<br />
@@ -44,19 +43,4 @@
             </p>
         </div>
     </div>
-    <div style="clear: both;" />
-    <h3>Returns / Delivery / Info</h3>
-    <p>
-        Pellentesque magna lorem, faucibus quis feugiat non, aliquet in libero.
-Integer sit amet gravida erat. Duis sodales tempor felis ac adipiscing.
-Suspendisse nonlectus enim.
-Vestibulum aliquet imperdiet posuere. Suspendisse ac diam odio.
-Ut porta metus a
-metus rutrum mattis. Nulla sodales, arcu ut mollis vehicula, tellus ante
-ultricies mauris, ultricies porttitor nunc purus a nisi.
-    </p>
-    <p>
-        Nulla ipsum urna, cursus sed consectetur nec, varius quis diam.
-Morbi consequat sapien ut leo placerat ornare.
-    </p>
 </asp:Content>
